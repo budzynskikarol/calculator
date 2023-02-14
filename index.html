@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <section class ="container">
+    <div class="calculator">
+        <div class="display">
+            <div class="previousNumber">
+                <p></p>
+            </div>
+            <p class="currentNumber">0</p>
+        </div>
+        <div class="panel">
+            <button class="clear">C</button>
+            <button class="operator">^</button>
+            <button class="operator">:</button>
+            <button class="operator">x</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">-</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">+</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="equals">=</button>
+            <button class="number">0</button>
+            <button class="number">00</button>
+            <button class="number">.</button>
+        </div>
+    </div> 
+    <div data-simplebar data-simplebar-auto-hide="false" class="calculator-history">
+        <p class="history-title">Last Calculations 
+            <button class="history-btn">Clear history</button>
+        </p>
+        <hr>
+        <ul class="history">
+
+        </ul>
+    </div>
+</section>
+    <div class = "footer">
+        <h3>Source code on <a href="https://github.com/budzynskikarol/calculator/" target=_blank>Github <i class='bx bxl-github'></i></a></h3>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+</body>
+</html>
